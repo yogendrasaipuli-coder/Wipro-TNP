@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="Java_Fundamentals"/>
 	<classpathentry kind="src" path="LogicBuildingDay2"/>
 	<classpathentry kind="src" path="MiniProject1"/>
+	<classpathentry kind="src" path="LogicBuildingDay3"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
