@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Scanner;
 
-public class EvenOdd {
+public class EvenOdds {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

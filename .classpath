@@ -6,5 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Java_Fundamentals"/>
+	<classpathentry kind="src" path="LogicBuilding"/>
+	<classpathentry kind="src" path="MiniProject1"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
