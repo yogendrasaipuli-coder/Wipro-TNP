@@ -7,6 +7,7 @@ public class Employee extends Person {
     public Employee(String name, double annualSalary, int yearStarted, String nationalInsuranceNumber) {
 
         super(name);
+
         this.annualSalary = annualSalary;
         this.yearStarted = yearStarted;
         this.nationalInsuranceNumber = nationalInsuranceNumber;
