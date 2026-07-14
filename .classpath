@@ -13,5 +13,6 @@
 	<classpathentry kind="src" path="OOPS/Inherintace"/>
 	<classpathentry kind="src" path="VideoRentalSystemMP2"/>
 	<classpathentry kind="src" path=" Exception Handling/Abstraction/Packages"/>
+	<classpathentry kind="src" path="Collection"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
