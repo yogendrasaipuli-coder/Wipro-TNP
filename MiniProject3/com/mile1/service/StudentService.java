@@ -1,9 +1,9 @@
-package service;
+package com.mile1.service;
 
-import bean.Student;
-import exception.NullMarksArrayException;
-import exception.NullNameException;
-import exception.NullStudentObjectException;
+import com.mile1.bean.Student;
+import com.mile1.exception.NullMarksArrayException;
+import com.mile1.exception.NullNameException;
+import com.mile1.exception.NullStudentObjectException;
 
 public class StudentService {
 

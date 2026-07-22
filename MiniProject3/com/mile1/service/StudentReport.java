@@ -1,13 +1,13 @@
-package service;
+package com.mile1.service;
 
-import bean.Student;
-import exception.NullMarksArrayException;
-import exception.NullNameException;
-import exception.NullStudentObjectException;
+import com.mile1.bean.Student;
+import com.mile1.exception.NullMarksArrayException;
+import com.mile1.exception.NullNameException;
+import com.mile1.exception.NullStudentObjectException; // or NullStudentException
 
 public class StudentReport {
 
-    public String findGrades(Student studentObject) {
+    public String findGrade(Student studentObject) {
         int[] marks = studentObject.getMarks();
 
         for (int mark : marks) {
@@ -21,27 +21,29 @@ public class StudentReport {
             sum += mark;
         }
 
-        if (sum < 150)
+        if (sum <= 150) {
+            return "D";
+        } else if (sum <= 200) {
             return "C";
-        else if (sum < 200)
+        } else if (sum <= 250) {
             return "B";
-        else if (sum < 250)
+        } else {
             return "A";
-        else
-            return "A+";
+        }
     }
 
-    public String validate(Student studentObject)
+    public String validate(Student studentObject) 
             throws NullNameException, NullMarksArrayException, NullStudentObjectException {
-
-        if (studentObject == null)
+        
+        if (studentObject == null) {
             throw new NullStudentObjectException();
-
-        if (studentObject.getName() == null)
+        }
+        if (studentObject.getName() == null) {
             throw new NullNameException();
-
-        if (studentObject.getMarks() == null)
+        }
+        if (studentObject.getMarks() == null) {
             throw new NullMarksArrayException();
+        }
 
         return "VALID";
     }

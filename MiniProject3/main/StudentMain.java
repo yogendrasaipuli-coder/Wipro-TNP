@@ -1,11 +1,11 @@
 package main;
 
-import bean.Student;
-import exception.NullMarksArrayException;
-import exception.NullNameException;
-import exception.NullStudentObjectException;
-import service.StudentReport;
-import service.StudentService;
+import com.mile1.bean.Student;
+import com.mile1.exception.NullMarksArrayException;
+import com.mile1.exception.NullNameException;
+import com.mile1.exception.NullStudentObjectException;
+import com.mile1.service.StudentReport;
+import com.mile1.service.StudentService;
 
 public class StudentMain {
 
@@ -28,7 +28,7 @@ public class StudentMain {
             try {
 
                 report.validate(data[i]);
-                String grade = report.findGrades(data[i]);
+                String grade = report.findGrade(data[i]);
 
                 System.out.println(data[i].getName() + " : " + grade);
 
